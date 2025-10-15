@@ -32,22 +32,22 @@ public class App {
         double descuento = 0;
 
         if (entradasPareja > 0) {
-            System.out.printf("Entrada pareja %d%n", entradasPareja);
-            System.out.printf("Precio por entrada de pareja %.2f%n", preciopareja);
+            System.out.printf("Entrada pareja %25d%n", entradasPareja);
+            System.out.printf("Precio por entrada de pareja %11.2f%n", preciopareja);
         }
         if (entradasIndividual > 0) {
-            System.out.printf("Entrada individual %d%n", entradasIndividual);
-            System.out.printf("Precio por entrada individual %.2f%n", precioBase);
+            System.out.printf("Entrada individual %21d%n", entradasIndividual);
+            System.out.printf("Precio por entrada individual %10.2f%n", precioBase);
         }
         double total = (entradasIndividual * precioBase) + (entradasPareja * preciopareja);
 
-        System.out.printf("Total %.2f%n", total);
+        System.out.printf("Total %34.2f%n", total);
  
         if (tarjetaString.equals("s")) {
             descuento = total * 0.1;
         }
-        System.out.printf("descuento %.2f%n", descuento);
-        System.out.printf("A pagar %.2f%n", total-descuento);
+        System.out.printf("descuento %30.2f%n", descuento);
+        System.out.printf("A pagar %32.2f%n", total-descuento);
         
 
     }
